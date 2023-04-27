@@ -1,0 +1,9 @@
+name: osx-arm64 build checks
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: osx-arm64
+    steps:
+    - uses: actions/checkout@v3
