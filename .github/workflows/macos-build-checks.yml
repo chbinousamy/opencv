@@ -4,7 +4,7 @@ on: workflow_dispatch
 
 jobs:
   build:
-    runs-on: [macos-13, m1max]
+    runs-on: [macos-13]
     steps:
     - run: uname -m
     - uses: actions/checkout@v3
