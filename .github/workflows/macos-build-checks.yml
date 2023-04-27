@@ -8,4 +8,5 @@ jobs:
     steps:
     - run: uname -m
     - uses: actions/checkout@v3
+    - run: sudo ln -s /Applications/Xcode.app/Contents/Developer Developer
     - run: python platforms/ios/build_framework.py ios --iphoneos_archs arm64 --iphonesimulator_archs x86_64
